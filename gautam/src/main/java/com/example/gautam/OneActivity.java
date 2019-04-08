@@ -28,9 +28,9 @@ public class OneActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
         Intent returnIntent = new Intent();
         returnIntent.putExtra("result", "Hello");
         setResult(Activity.RESULT_OK, returnIntent);
+        finish();
     }
 }
